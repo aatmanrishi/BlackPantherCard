@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=PT+Sans+Narrow&family=Roboto+Condensed:wght@700&display=swap');
+
+/* font-family: 'Alkalami', serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Alkalami', serif;
+    background-color: hsl(0,0%,94%);
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 270px;
+    min-width: 250px;
+    width: 370px;
+    box-shadow: rgba(0,0,0,0.15) 0px 5px 15px;
+    background: linear-gradient(45deg,#0c0200,#2f3131);
+    position: relative;
+    border-radius: 20px;
+    padding-left: 20px;
+    color: aliceblue;
+    
+
+}
+.card img{
+    height: 320px;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left:62%;
+    transform: translate(-50%,-50%);
+    transition: all 0.2 ease-in;
+}
+.card h2 {
+    margin-top: 20px;
+    color: #e5aa1d;
+    transition: all 0.2 ease-in;
+}
+.card p {
+    width: 200px;
+    margin-bottom: 25px;
+    transition: all 0.2 ease-in;
+    opacity: 0;
+
+}
+
+.card a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color:#0c0200;
+    background-color: #e5aa1d;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2 ease-in;
+    opacity: 0;
+
+}
+
+.card a:hover {
+    color:#0c0200;
+    background-color: #fff;
+
+}
+.card:hover img {
+    left: 85%;
+    top: 40%;
+   height: 380px;
+
+}
+.card:hover h2{
+    font-size:30px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.card:hover p,a{
+    opacity: 1;
+}
